@@ -4,4 +4,4 @@ metadata:
   name: backend
   namespace: expense
 data:
-  DB_HOST: expense-dev.prcdaws82s.online
+  DB_HOST: mysql-dev.prcdaws82s.online
