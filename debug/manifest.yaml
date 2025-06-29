@@ -4,7 +4,7 @@ metadata:
     name: debug
     namespace: expense
 spec:
-  # one pod can contain multiple containers
+  # one pod can contain multiple container's
   containers: 
     - name: debug
       image: prc1196/debug:1.0.0
