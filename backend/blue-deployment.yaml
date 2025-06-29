@@ -1,14 +1,14 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backend-blue
+  name: backend-green 
   namespace: expense
   # lables of deployment resource
   labels:
     app: backend
     tier: backend
     purpose: expense
-    version: blue
+    version: green
 spec:
   replicas: 1
   selector:   #slectors are lables
@@ -16,18 +16,18 @@ spec:
        app: backend
        tier: backend
        purpose: expense
-       version: blue
+       version: green
   template:
     metadata:
       labels:
          app: backend
          tier: backend
          purpose: expense
-         version: blue
+         version: green
     spec:
       containers:
       - name: nginx
-        image: prc1196/backend:1.0.0
+        image: prc1196/backend:3.0.0
         envFrom:
         - configMapRef:
             name: backend
