@@ -8,9 +8,10 @@ spec:
     app: backend
     tier: backend
     purpose: expense
+    version: blue
   ports:
   - protocol: TCP
     port: 8080  #service port
     targetPort: 8080
-    
+
    
