@@ -28,3 +28,6 @@ spec:
       containers:
       - name: nginx
         image: prc1196/backend:1.0.0
+        envFROM:
+        - configMapRef:
+          name: backend
