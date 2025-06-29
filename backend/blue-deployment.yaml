@@ -30,4 +30,4 @@ spec:
         image: prc1196/backend:1.0.0
         envFROM:
         - configMapRef:
-          name: backend
+            name: backend
